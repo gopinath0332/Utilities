@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>angular</title>
+</head>
+
+<body ng-app="test" ng-controller="tc">
+    <button ng-click="add()">Add</button>
+    <ul>
+        <li ng-repeat="d in data">{{"list" + d}}</li>
+    </ul>
+    <script src="lib/angular.min.js" charset="utf-8"></script>
+    <script src="js/angular.js" charset="utf-8"></script>
+</body>
+
+</html>
