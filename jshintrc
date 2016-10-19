@@ -12,6 +12,7 @@
     "sub": true,
     "-W041": false,
     "strict": false,
+    "elision": true,
     "undef": true,
     "unused": true,
     "globals": {
