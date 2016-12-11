@@ -8,10 +8,20 @@ import java.util.Comparator;
 
 /**
  * Created by Gopi on 11-12-2016.
+ * <p>
+ * Class implements comparator which does alphanumeric sorting.
  */
 
-// TODO: 12-12-2016 Need to add direction for sorting.
 public class SortComparator implements Comparator<ListingDao> {
+    private String direction = "asc";
+
+    public SortComparator() {
+    }
+
+    public SortComparator(String dir) {
+        this.direction = dir;
+    }
+
     @Override
     public int compare(ListingDao o1, ListingDao o2) {
         String textReg = "([^a-zA-Z]*)";
@@ -21,14 +31,25 @@ public class SortComparator implements Comparator<ListingDao> {
         if (aText.equals(bText)) {
             int aNum = Integer.parseInt(o1.getTask().toLowerCase().replaceAll(numReg, ""), 10);
             int bNum = Integer.parseInt(o2.getTask().toLowerCase().replaceAll(numReg, ""), 10);
-            return aNum == bNum ? 0 : aNum > bNum ? 1 : -1;
-
+            if (this.direction.equalsIgnoreCase("asc")) {
+                return aNum == bNum ? 0 : aNum > bNum ? 1 : -1;
+            } else {
+                return aNum == bNum ? 0 : aNum < bNum ? 1 : -1;
+            }
         } else {
             if (!StringUtils.isBlank(aText) && !StringUtils.isBlank(bText)) {
-                if (aText.compareTo(bText) > 0) {
-                    return 1;
-                } else if (aText.compareTo(bText) < 0) {
-                    return -1;
+                if (this.direction.equalsIgnoreCase("asc")) {
+                    if (aText.compareTo(bText) > 0) {
+                        return 1;
+                    } else if (aText.compareTo(bText) < 0) {
+                        return -1;
+                    }
+                } else {
+                    if (aText.compareTo(bText) < 0) {
+                        return 1;
+                    } else if (aText.compareTo(bText) > 0) {
+                        return -1;
+                    }
                 }
             } else {
                 if (StringUtils.isBlank(aText)) {
