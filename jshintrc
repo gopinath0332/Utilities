@@ -1,24 +1,31 @@
 {
-    // The plugin looks for a .jshintrc file in the same directory as the source
-    // file you're prettifying (or any directory above if it doesn't exist, or in
-    // your home folder if everything else fails) and uses those options along
-    // the default ones.
-
-    // Details: https://github.com/victorporof/Sublime-JSHint#using-your-own-jshintrc-options
-    // Example: https://github.com/jshint/jshint/blob/master/examples/.jshintrc
-    // Documentation: http://www.jshint.com/docs/options/
     "browser": true,
     "esnext": true,
-    "sub": true,
-    "-W041": false,
-    "strict": false,
-    "elision": true,
-    "undef": true,
-    "unused": true,
     "globals": {
         "angular": true,
         "$": true,
+        "require": true,
+        "JQueryMaps": true,
+        "_": true,
+        "define": true,
+        "dojo": true,
+        "wap": true,
+        "xwt": true,
         "console": true,
-        "define": true
-    }
+        "process": true,
+        "__dirname": true,
+        "ngmapsBaseUrl": true
+    },
+    "strict": false,
+    "laxcomma": true,
+    "eqeqeq": false,
+    "eqnull": true,
+    "-W041": false,
+    "-W069": false,
+    "undef": true,
+    "maxerr": 500,
+    "browser": true,
+    "debug": false,
+    "evil": false,
+    "unused": true
 }
