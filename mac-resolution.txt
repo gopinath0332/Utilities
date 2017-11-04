@@ -1,0 +1,2 @@
+/Library/Application\ Support/VMware\ Tools/vmware-resolutionSet 1600 900
+
