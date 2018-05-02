@@ -2,7 +2,7 @@
     "workbench.iconTheme": "vscode-great-icons",
     "window.zoomLevel": -1,
     "files.hotExit": "onExit",
-    "editor.fontSize": 18,
+    "editor.fontSize": 16,
     "editor.tabSize": 3,
     "editor.lineHeight": 25,
     "editor.minimap.enabled": true,
@@ -11,7 +11,6 @@
     "explorer.openEditors.visible": 20,
     "editor.suggestSelection": "first",
     "editor.renderIndentGuides": true,
-    "git.path": "C:\\Program Files\\Git\\bin",
     "window.title": "${dirty}${rootName}${separator}${appName}${separator}${activeEditorLong}",
     "workbench.colorTheme": "Atom One Dark",
     "terminal.integrated.shell.windows": "C:\\WINDOWS\\Sysnative\\cmd.exe",
@@ -27,5 +26,11 @@
     "workbench.editor.showTabs": true,
     "window.menuBarVisibility": "default",
     "emmet.showSuggestionsAsSnippets": true,
-    "emmet.triggerExpansionOnTab": true
+    "emmet.triggerExpansionOnTab": true,
+    "nasc-touchbar.blockComment": true,
+    "nasc-touchbar.showReferences": true,
+    "nasc-touchbar.jumpToBracket": true,
+    "nasc-touchbar.togglePanel": false,
+    "nasc-touchbar.showCommands": false,
+    "nasc-touchbar.goToDefinition": false
 }
