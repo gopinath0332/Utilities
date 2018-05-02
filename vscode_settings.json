@@ -30,6 +30,7 @@
     "nasc-touchbar.blockComment": true,
     "nasc-touchbar.showReferences": true,
     "nasc-touchbar.jumpToBracket": true,
+    "nasc-touchbar.toggleSidebar": true,
     "nasc-touchbar.togglePanel": false,
     "nasc-touchbar.showCommands": false,
     "nasc-touchbar.goToDefinition": false
